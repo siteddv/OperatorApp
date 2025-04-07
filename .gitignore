@@ -1,0 +1,118 @@
+# ===============================
+# Build and runtime artifacts
+# ===============================
+# Compiled binaries and intermediate files
+**/bin/
+**/obj/
+/out/
+/*.dll
+/*.exe
+/*.pdb
+
+# Node.js build artifacts
+/node_modules/
+/dist/
+/build/
+
+# Python build artifacts
+/__pycache__/
+*.py[cod]
+
+# ===============================
+# IDE and Editor specific files
+# ===============================
+# JetBrains Rider / IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.vspscc
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Other editors
+*.sublime-project
+*.sublime-workspace
+*.vscode-remote/
+
+# ===============================
+# NuGet and .NET specific files
+# ===============================
+# NuGet packages
+**/packages/
+*.nupkg
+*.nuget.props
+*.nuget.targets
+
+# Temporary files
+*.tmp
+*.log
+*.cache
+
+# Test results
+/TestResults/
+/coverage/
+
+# ===============================
+# Docker
+# ===============================
+# Docker images and volumes
+docker-compose.override.yml
+.dockerenv
+.dockerignore
+
+# Local Docker data
+/.devcontainer/
+
+# ===============================
+# User-specific files
+# ===============================
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs and databases
+*.sqlite
+*.db
+*.db3
+*.mdf
+*.ldf
+
+# ===============================
+# OS-specific files
+# ===============================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# ===============================
+# Other ignored files
+# ===============================
+# Backup files
+*.bak
+*.old
+*.orig
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build output
+/build/
+/dist/
+/publish/
