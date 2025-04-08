@@ -1,19 +1,18 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using OperatorApp.Core.Entities;
 
-namespace Operator.Web.Pages;
-
-public class IndexModel : PageModel
+namespace OperatorApp.Web.Pages.Operators
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
+    public class IndexModel(IHttpClientFactory httpClientFactory) : PageModel
     {
-        _logger = logger;
-    }
+        private readonly HttpClient _httpClient = httpClientFactory.CreateClient("APIClient");
 
-    public void OnGet()
-    {
+        public IList<Operator> Operators { get; set; } = new List<Operator>();
 
+        public async Task OnGetAsync()
+        {
+            Operators = await _httpClient.GetFromJsonAsync<List<Operator>>("operators")
+                        ?? new List<Operator>();
+        }
     }
 }

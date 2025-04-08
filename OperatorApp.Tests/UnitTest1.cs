@@ -1,4 +1,4 @@
-namespace Operator.Tests;
+namespace OperatorApp.Tests;
 
 public class UnitTest1
 {

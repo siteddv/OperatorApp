@@ -1,4 +1,4 @@
-﻿namespace Operator.Infrastructure;
+﻿namespace OperatorApp.Infrastructure;
 
 public class Class1
 {

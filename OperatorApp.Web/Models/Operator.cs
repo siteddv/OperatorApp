@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace OperatorApp.Core.Entities;
+namespace OperatorApp.Web.Models;
 
-public class Operator
+public class OperatorModel
 {
     public int Code { get; set; }
     public string? Name { get; set; }
